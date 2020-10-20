@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="beverage.css">
+
+</head>
+<body>
+<div id="container">
+		<div class="navbar">
+
+			<div class="logo">
+
+			</div>
+
+			<div class="nav">
+				<ul>
+		          <li><a href="#">Home</a> </li>
+		          <li><a href="#">Products</a> </li>
+		          <li><a href="#">Whats new</a> </li>
+		          <li><a href="#">Newsletter</a> </li>
+		          <li><a href="#">Contact</a> </li>
+		        </ul>
+    		</div>
+		</div>
+	<div class="img-desc-container">
+
+		<div class="desc">
+
+			<div class="heading">
+				<p>That's what</p>
+			</div>
+
+			<div class="sub-heading">
+				<p>I Like!!!</p>
+			</div>
+
+
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat..</p>
+			</div>
+
+			<button id="btn">View all Products</button>
+
+		</div>
+
+		<div class="img">
+			<img src="images/coc.png"  id="bevrage">
+		</div>
+
+
+	</div>
+
+
+		<div class="button_img">
+		 	<ul>
+		        <li><a href="#"><img src="images/coc.png" alt="" id="coc"> </a> </li>
+		        <li><a href="#"><img src="images/sprite.png" alt="" id="sprite"> </a> </li>
+		        <li><a href="#"><img src="images/pepsi.png" alt="" id="pepsi"> </a> </li>
+		     </ul>
+	  	</div>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+	var coc=document.getElementById("coc");
+	var sprite=document.getElementById("sprite");
+	var pepsi=document.getElementById("pepsi");
+	var container = document.getElementById('container');
+
+
+coc.addEventListener("click",function(){
+	document.getElementById("bevrage").src="images/coc.png";
+	container.style.background='red';
+
+})
+
+	
+sprite.addEventListener("click",function(url,color){
+	 document.getElementById("bevrage").src="images/sprite.png";	
+	container.style.background='green';
+
+	})
+	
+pepsi.addEventListener("click",function(){
+	document.getElementById("bevrage").src="images/pepsi.png";
+	container.style.background='black';
+
+	})
+
+     
+    </script>
+
+</html>
